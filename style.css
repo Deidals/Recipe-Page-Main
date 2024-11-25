@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: ;
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+img{
+    border-radius: 3vh;
+    width: 100%;
+    align-self: center;
+}
+body {
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
+    font-family: 'Outfit', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.container{
+    background-color: white;
+    border-radius: 50px;
+    padding: 2% 3%;
+    margin: 15%;
+    width: 79%;
+}
+
+.section_one{
+    background-color: hsl(330, 100%, 98%);
+
+}
+
+.section_one h3{
+    color: hsl(332, 51%, 32%);
+}
+
+.section_one ul {
+    padding-left: 40px;
+}
+
+header, main, section, footer{
+    margin: 1vh;
+}
+
+h1{
+    color: black;
+    margin-bottom: 8px;
+}
+
+li{
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+h2{
+    font-family: 'YoungSerif', serif;
+    color: hsl(14, 45%, 36%);
+    margin: 30px 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid black;
+}

@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: ;
 }
 
 @font-face {
@@ -18,7 +17,7 @@
 }
 
 img{
-    border-radius: 3vh;
+    border-radius: 1rem;
     width: 100%;
     align-self: center;
 }
@@ -35,15 +34,14 @@ body {
 
 .container{
     background-color: white;
-    border-radius: 50px;
+    border-radius: 1rem;
     padding: 2% 3%;
-    margin: 15%;
-    width: 79%;
+    margin: 15% auto;
+    width: 55%;
 }
 
 .section_one{
     background-color: hsl(330, 100%, 98%);
-
 }
 
 .section_one h3{
@@ -55,7 +53,7 @@ body {
 }
 
 header, main, section, footer{
-    margin: 1vh;
+    padding: 3%;
 }
 
 h1{
@@ -67,16 +65,73 @@ li{
     margin-left: 10px;
     margin-bottom: 8px;
 }
+li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bolder;
+}
+
 h2{
     font-family: 'YoungSerif', serif;
     color: hsl(14, 45%, 36%);
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 table {
+    width: 100%;
     border-collapse: collapse;
 }
 
-td {
-    border-bottom: 1px solid black;
+table tr:not(:last-child) {
+    border-bottom: 1px solid hsla(0, 0%, 50%, 0.493);
+}
+
+table td {
+    padding: 10px;
+}
+hr{
+    width: 100%;
+    max-width: 100%;
+    height: 0.5px;
+    background-color: hsla(0, 0%, 50%, 0.493);
+    border: none;
+}
+footer{
+    padding-top: 0;
+    margin-top: 4%;
+}
+
+footer section{
+    text-indent: 0%;
+    padding-left: 0%;
+}
+
+footer h2{
+    margin:0%;
+}
+
+table tbody .row-two{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        margin: 0 auto;
+        width: auto;
+        max-width: 375px;
+        border-radius: 0%;
+        padding:0;
+    }
+    img {
+        border-radius: 0;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        align-self: center;
+}
+
+    header, main, footer,.section_one{
+        padding: 3% 10%;
+    }
 }
